@@ -8,7 +8,7 @@ about.addEventListener('click', () => {
         title: 'About Me',
         //modal: true,
         width: '400px',
-        height: '400px',
+        height: '500px',
         top: 50,
         right: 50,
         bottom: 50,
@@ -65,8 +65,7 @@ $.fn.typewriter = function() {
                         ">" != b.substring(a, a + 1);) a++
             }
             c.html(b.substring(d, a++) + (a & 1 ? "_" : ""));
-            a >= b.length || setTimeout(e, 70 + 100 *
-                Math.random())
+            a >= b.length || setTimeout(e, 10)
         };
         e()
     });
